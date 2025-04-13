@@ -1,0 +1,23 @@
+{
+  "name": "cloud_native",
+  "version": "1.0.0",
+  "description": "cloud native hw2",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/young91319/cloud_native.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/young91319/cloud_native/issues"
+  },
+  "homepage": "https://github.com/young91319/cloud_native#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
