@@ -1,0 +1,20 @@
+name: HW1-P Success Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Say Hello
+        run: echo "Hello from hw1-p branch!"
+
+      - name: Simulate Success
+        run: echo "All good ✅"
