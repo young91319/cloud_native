@@ -1,0 +1,25 @@
+name: 🔁 NPM Push Test
+
+on:
+  push:
+    branches:
+      - "**" # 所有分支的 push 都觸發，可改成 main/hw1-p 等
+
+jobs:
+  npm-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🧰 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # 可根據專案調整版本
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🧪 Run tests
+        run: npm test
